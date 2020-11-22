@@ -6,7 +6,7 @@
     --dark-grayish-blue-primary: hsl(227, 10%, 46%);
 
     --dark-gray-neutral: hsl(0, 0%, 59%);
-}`
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
@@ -14,12 +14,79 @@
 .attribution a {
      color: hsl(228, 45%, 44%); 
 }
+body {
+    background-color: var(--dark-cyan-primary);
+}
+
+#bg-cir-top {
+    position: relative;
+    bottom: 250px;
+    right: 100px;
+    width: 50%;
+}
+
+#bg-cir-bottom {
+    position: relative;
+    width: 60%;
+    bottom: 250px;`
+    left: 700px;
+}
+
+.profile-card {
+    background: url(images/bg-pattern-card.svg);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    margin: 1em;
+    padding-top: 3em;
+    background-color: white;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 5px 2px 20px rgba(97, 97, 97, 0.219);
+}
+
+#user-info {
+    background: white;
+    padding-top: 3em;
+    /* padding: .8em; */
+    border-radius: 0 0 18px 18px;
+}
+
+.user-stats-container {
+    border-top: .5px solid rgb(230, 230, 230);
+    display: flex;
+    padding-left: 2.5em;
+}
+
+.user-stats-container > div{
+    margin: 0 .4em;
+    padding: 1em;
+    /* border: .4em solid rgb(185, 66, 66); */
+}
+.profile-card > img {
+    width: 6em;
+    position: relative;
+    top: 50px;
+    border: .4em solid white;
+    border-radius: 70%;
+}
 
 h3{
     font-family: "Kumbh Sans", sans-serif;
     font-size: 18px;
+    color: var(--very-dark-blue-primary);
 }
-
+span{
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    color: var(--dark-grayish-blue-primary);
+}
 p {
     font-family: "Kumbh Sans", sans-serif;
+    font-size: .9em;
+    color: var(--dark-gray-neutral);
+
 }
