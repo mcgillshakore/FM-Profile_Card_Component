@@ -14,6 +14,13 @@
 .attribution a {
      color: hsl(228, 45%, 44%); 
 }
+html, body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 body {
     background-color: var(--dark-cyan-primary);
 }
